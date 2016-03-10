@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="css/animate-animo.min.css" />
+</head>
+<style type="text/css">
+* {
+    outline: none;
+    color: #fefefe;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background: #6cf;
+}
+
+.head{
+    float: left;
+    width: 100vw;
+}
+
+.face_1 {
+    float: left;
+    width: 25vw;
+    margin: 5vw;
+    border-radius: 15vw;
+    box-shadow: 0px 0px 8px #fefefe;
+}
+
+.info{
+    float: left;
+    width: 60vw;
+    font-size: 12px;
+    opacity: 0;
+    transition: all 2s;
+}
+
+img {
+    transition: all 0.5s;
+}
+
+</style>
+
+<body>
+    <div class="head">
+        <img class="face_1" src="img/face01.jpg" />
+        <div class="info">
+            <p>爾比花還美丶</p>
+            <p>完美理性的处女座</p>
+            <p>浑人落魄江湖行，东西南北分不清。撞到墙角浑不觉，躺在地上数星星！</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/animo.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.face_1').animo({
+            animation: "fadeInDown",
+            duration: 1,
+            keep: true
+        });
+        $('.info').css({
+            opacity: 1
+        });
+    });
+    </script>
+</body>
+
+</html>
